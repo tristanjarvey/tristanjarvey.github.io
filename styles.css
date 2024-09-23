@@ -3,8 +3,9 @@ html {
 }
 
 body {
-  background: #202222; /* in case browser doesn't support gradient */
-  /* background: linear-gradient(to right, rgb(32,34,34,1) 0%, rgba(20,80,98,1) 90%); */
+  background: #202222; /* in case browser doesn't support gradient. Options: #202222, #042022 */
+  /* background: linear-gradient(to bottom, #202222 90%, #221f04 99%); */
+  /* #606F71 --> #3B444D*/
   color: #eaeaea;
   font-family: 'Open Sans', Tahoma, 'Geneva', Verdana, sans-serif;
   font-size: 1.8rem;
@@ -49,6 +50,19 @@ header a {
   text-decoration: none;
 }
 
+#main-contents .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#main-contents .container a {
+  color: #ffc400;
+  text-decoration: none;
+  font-style: italic;
+}
+
 a {
   color: #ffc400;
   text-decoration: none;
@@ -67,9 +81,28 @@ main {
   margin: 1rem;
 }
 
+h2 {
+  text-align: center;
+}
+
+#resume {
+  display: flex;
+  justify-content: center;
+}
+
+#main .container img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 1rem auto 5rem auto;
+
+}
+
 ::selection {
-  background-color: hsl(190, 70%, 16%, 0.3);
-  color: #21a9d2;
+  /* background-color: #042022;
+  color: #76cae4; */
+  background-color: #221f04;
+  color: #e4d276;
   border: 2px solid yellow;
   text-shadow: 0 0 1px #000000;
 }
